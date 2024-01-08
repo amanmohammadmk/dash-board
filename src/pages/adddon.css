@@ -1,0 +1,117 @@
+.addon-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 4%;
+  }
+  
+  .addon-plan {
+    position: relative;
+    width: 30%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+    background-color: #fff;
+    overflow: hidden;
+  }
+  
+  .addon-plan:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .addon-plan h2 {
+    color: #3498db;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .addon-plan p {
+    color: #777;
+    margin: 10px 0;
+  }
+  
+  .addon-plan .price {
+    font-size: 1.2rem;
+    color: #e74c3c;
+    font-weight: bold;
+  }
+  
+  .addon-plan .features {
+    margin-top: 20px;
+  }
+  
+  .addon-plan .features ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .addon-plan .features li {
+    margin: 8px 0;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .addon-plan .features li svg {
+    margin-right: 10px;
+    color: #3498db;
+  }
+  
+  .addon-plan .features li:hover {
+    color: #e74c3c;
+  }
+  
+  .addon-plan .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(52, 152, 219, 0), rgba(52, 152, 219, 0.7));
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  .addon-plan:hover .overlay {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  .addon-plan .overlay h2 {
+    color: #fff;
+    font-size: 1.8rem;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  .addon-plan.selected {
+    z-index: 1;
+    transform: scale(2.3);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #82b3ce;
+  }
+  
+
+
+
+  @media (max-width: 768px) {
+    .addon-plan {
+      width: 100%;
+    }
+
+ 
+  }
