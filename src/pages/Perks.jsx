@@ -25,7 +25,7 @@ function Perks() {
      
 
       <footer>
-        <p>Choose [Site Name] for storage that goes beyond expectations. Experience the perks of being part of our storage community today!</p>
+        <p>Choosing storage that goes beyond expectations. Experience the perks of being part of our storage community today!</p>
       </footer>
     </div>
   )
