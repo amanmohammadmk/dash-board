@@ -14,7 +14,7 @@ function Support() {
         <div className="support-main-bottom">
         <div className="bottom-left">
           <h3>Meet Our Developer</h3>
-          <p>
+          <p className="p-edit">
             <strong>Name:</strong> John Doe<br />
             <strong>Email:</strong> john.doe@example.com<br />
             <strong>LinkedIn:</strong> linkedin.com/in/johndoe<br />
@@ -23,7 +23,7 @@ function Support() {
         </div>
         <div className="bottom-right">
           <h3>Contact Details</h3>
-          <p>
+          <p className="p-edit">
             <strong>Email:</strong> support@example.com<br />
             <strong>Phone:</strong> +1 123-456-7890<br />
             <strong>Address:</strong> 123 Main Street, Cityville, State, 12345
